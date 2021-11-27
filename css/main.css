@@ -1,0 +1,135 @@
+.page {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* For Desktop */
+
+@media only screen and (min-device-width : 769px) and (max-device-width : 7680px) {
+
+@media screen {
+  * {
+        background: lightgrey;
+    }
+}
+
+.gridContainer {
+    width:50%;
+    float:left;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.gridContainerTwo {
+    width: 20%;
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.gridItem {
+    padding: 30%;
+    font-size:2rem;
+    font-family: monospace;
+    color: whitesmoke;
+    text-align:center;
+}
+
+.colorOne{
+    background-color: #6F98A8;
+}
+
+.colorTwo{
+    background-color: #2B8EAD;
+}
+
+.colorThree{
+    background-color: #2F454E;
+}
+
+.colorFour{
+    background-color: #BFBFBF;
+}
+
+.button {
+    background-color: #72C3DC;
+    color: #ffffff;
+    border-radius: 0.3rem;
+    border: none;
+    width: 60%;
+    font-family: monospace;
+    font-size: 1rem;
+    box-shadow: 0px 5px 0px 0px #2b8ead;
+    padding:5px;
+}
+
+.buttonGrid {
+    margin-top: 20%;
+}
+
+.topMargin {
+    margin-top: 5%;
+}
+
+}
+
+/* For Mobile & Tablet */
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+
+    @media screen {
+        * {
+              background: #ffffff;
+          }
+    }
+
+    .gridContainer {
+        width: 80%;
+        margin: 10%;
+    }
+
+    .gridContainerTwo {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .gridItem {
+        padding: 3%;
+        font-size: 1rem;
+        font-family: monospace;
+        text-align: center;
+        margin-top: 4px;
+    }
+
+    .colorOne{
+        background: linear-gradient(to right, #6F98A8 2%, #EFEFEF 2%);
+    }
+    
+    .colorTwo{
+        background: linear-gradient(to right, #2B8EAD 2%, #EFEFEF 2%);
+    }
+    
+    .colorThree{
+        background: linear-gradient(to right, #2F454E 2%, #EFEFEF 2%);
+    }
+    
+    .colorFour{
+        background: linear-gradient(to right, #BFBFBF 2%, #EFEFEF 2%);
+    }
+
+    .buttonGrid {
+        display:flex;
+        flex-direction: row;
+    }
+
+    .button {
+        background-color: #72C3DC;
+        color: #ffffff;
+        border-radius: 0.3rem;
+        border: none;
+        width: 60%;
+        font-family: monospace;
+        font-size: 1rem;
+        box-shadow: 0px 5px 0px 0px #2b8ead;
+        padding: 5px;
+    }
+    
+}
